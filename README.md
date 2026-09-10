@@ -61,6 +61,13 @@ docker run --rm rtlv-task            # verifies the reference solution
 docker run --rm rtlv-task mutations  # runs the verifier's own mutation tests
 ```
 
+Or directly, standard library only, no dependencies:
+
+```bash
+python verify.py              # PASS  seed=20260908
+python tests/test_verifier.py # PASS: all 10 mutations killed
+```
+
 ## What the mutation tests actually caught
 
 Writing this sample, the first version of the verifier let **two** mutations through:
